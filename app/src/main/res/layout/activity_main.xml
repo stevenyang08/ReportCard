@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.reportcard.MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+        <TextView
+            style="@style/ListHeader"
+            android:text="@string/classHeader"
+            />
+        <View
+            style="@style/VerticalSeparator"
+            />
+        <TextView
+            style="@style/ListHeader"
+            android:text="@string/gradeHeader"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalSeparator"
+        />
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/ListStyle"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+</LinearLayout>
